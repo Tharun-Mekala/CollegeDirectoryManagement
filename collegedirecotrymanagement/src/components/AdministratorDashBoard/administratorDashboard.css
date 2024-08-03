@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #dfe9f5;
+  display: flex;
+  min-height: 100vh;
+  min-width: 200vh;
+  justify-content: space-evenly;
+}
+
+.dashboard {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.sidebar {
+  width: 280px;
+  background: #fff;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li button {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sidebar ul li button:hover {
+  background: #eee;
+}
+
+.view-area {
+  flex: 1;
+  padding: 20px;
+  height: calc(100vh - 40px); /* Adjust based on padding */
+}
+
+.fixed-heading {
+  position: sticky;
+  top: 0;
+  background: #dfe9f5;
+  padding: 10px;
+  z-index: 10;
+}
+
+.fixed-search {
+  position: sticky;
+  top: 50px; /* Adjust based on the heading height */
+  background: #dfe9f5;
+  padding-bottom: 10px;
+  z-index: 10;
+}
+
+.scrollable-content {
+  height: calc(100% - 100px); /* Adjust based on the height of the fixed search area and heading */
+  overflow-y: auto;
+}
+
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-table th, .list-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-table th {
+  background-color: #f2f2f2;
+}
+
+.view-area .profile-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.view-area .profile-card div {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px; /* Adjust as necessary */
+}
+
+.proilebox {
+  width: 280px;
+  background: #fff;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.proilebox .profile_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.proilebox .profile-info p {
+  margin: 5px 0;
+}
+
+.heading {
+  font-size: 24px;
+  text-align: center;
+}
