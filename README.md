@@ -1,2 +1,2 @@
 # CollegeDirectoryManagement
-SpringBoot &amp; ReactJs
+SpringBoot &amp; React
